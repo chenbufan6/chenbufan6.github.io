@@ -1,0 +1,86 @@
+#web_bg {
+    /* 背景图像的地址（url括号里）  */
+    background: url(/img/ThemeBackGround.jpg);
+    /* 背景图像不重复 */
+    background-repeat: no-repeat;
+    /* 背景图像大小 */
+    background-size: cover;
+    background-position: 50% 40%;
+  }
+
+/*导航栏居中*/
+/*调节比例*/
+#nav #blog-info
+{
+  /*导航栏中的图标*/
+  display: flex;
+  flex: 1;/*调节比例*/
+}
+#nav #menus{
+  /*导航栏中的菜单*/
+  flex: 2.4;/*调节比例*/
+  justify-content: flex-end;
+  margin-left: auto;
+  display: flex;
+  flex-wrap:nowrap;
+}
+
+#menus #search-button
+{
+  /*搜索*/
+  flex: 1;/*调节比例*/
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#nav .site-page
+{
+  /*搜索中的链接*/
+  padding-bottom: 0px;
+}
+
+#menus .menus_items
+{
+  /*导航栏菜单中除开搜索*/
+  flex: 8;/*调节比例*/
+  display: flex;
+}
+/*设置导航菜单中除开搜索的间距*/
+#nav .menus_items .menus_item
+{
+  flex: 1;
+}
+
+#nav *::after{
+  background-color: transparent!important;
+}
+
+
+/*侧边栏卡片样式*/
+#aside-content .card-widget
+{
+  opacity: 0.6;
+  background-color: #1D1F20;
+  border-radius: 3px;
+  border: double;
+  border-color:  whitesmoke;
+  color: aliceblue;
+  border-radius: 10px;
+}
+
+#recent-posts > .recent-post-item
+{
+  opacity: 0.6;
+  background-color: #1D1F20;
+  border-radius: 3px;
+  border: double;
+  border-color:  whitesmoke;
+  color: aliceblue;
+  border-radius: 10px;
+}
+
+#nav .menus_items .menus_item .menus_item_child li span
+{
+  color: #2d2717;
+}
